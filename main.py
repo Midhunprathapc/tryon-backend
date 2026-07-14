@@ -46,9 +46,11 @@ VIRTUAL_TRYON_API_KEY = os.getenv("VIRTUAL_TRYON_API_KEY", "")
 # ---------------------------------------------------------------------------
 
 app = FastAPI(
-    title="Lishas Try-On API",
-    description="Proxy that forwards try-on requests to the upstream AI service.",
+    title="YTHIX API",
+    description="API for Tryon Jobs and Backend Services",
     version="1.0.0",
+    docs_url="/docs",
+    redoc_url="/redoc",
 )
 
 app.add_middleware(
